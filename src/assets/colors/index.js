@@ -1,0 +1,17 @@
+export const primary = "#7620E5";
+// export const secondary = "#FEAA21";
+export const splash_bg = "#0F0524";
+export const gold = "#FFD700";
+export const smoke = "#F5F9FF";
+export const green = "green";
+export const white = "#ffffff";
+export const black = "#000000";
+export const dullBlack = '#181818';
+export const lightGray = "#E6E6E6";
+export const gray = "#DCDCDC";
+export const darkGray = "#B4B4B4";
+export const purple = "#7421E4";
+export const lightPurple = "#EFE5FC";
+export const yellow = "#ffe234";
+export const orange = "#FEAA21";
+export const lightBlue = "#267DFF";
