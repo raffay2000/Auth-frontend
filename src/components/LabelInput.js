@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { black, gray, primary } from '../../assets/colors';
-import { regular } from '../../assets/fonts';
+// import { regular } from '../../assets/fonts';
 
 const LabelInput = ({style, editable, labelStyle, inputStyle, label, onChange, value, placeholder, inputRef, onSubmitPress, blur, keyboard}) => {
     const input = useRef(null);

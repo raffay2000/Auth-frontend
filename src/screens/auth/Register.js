@@ -6,7 +6,7 @@ import {
 } from 'react-native-responsive-screen';
 import IconInput from '../../components/IconInput';
 import {Button} from '../../components/Button';
-const Register = () => {
+const Register = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View>
@@ -55,7 +55,9 @@ const Register = () => {
       iconColor={'#DCDCDC'}
       placeholder={'City'}
       />
-      <Button style={{marginTop:hp("2.5%")}} color={"#4640FF"} text={'SIGN UP'} textColor={'#FFFFFF'}/>
+      <Button onPress={()=>{
+        navigation.navigate('Welcome')
+      }} style={{marginTop:hp("2.5%")}} color={"#4640FF"} text={'SIGN UP'} textColor={'#FFFFFF'}/>
     </View>
   )
 }

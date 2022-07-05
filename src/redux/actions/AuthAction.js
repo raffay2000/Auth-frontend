@@ -1,12 +1,13 @@
 import { navigate } from '../../navigation';
 import { setItem } from '../../persist-storage';
 import { fetchAPI } from '../../services';
+import  Toast  from 'react-native-toast-message';
 import {
     LOGIN,
     LOGIN_DONE,
     REGISTER,
     REGISTER_DONE,
-} from '../Constants';
+} from '../constant';
 
 export const login = (email, password, context) => {
 
@@ -25,15 +26,15 @@ export const login = (email, password, context) => {
         //     console.log(res)
         //     if(res){
 
-                fetchAPI('post', 'signin', data)
+                fetchAPI('post', 'login', data)
                 .then((response)=>{
                     response.json().then(data=>{
                         console.log(data)
-                        if(data.success){
-                            loginDone(dispatch, "Login Successful", data.data);
-                            setItem("user", JSON.stringify(data.data));
+                        if(data.result){
+                            loginDone(dispatch, "Login Successful", data.result);
+                            setItem("user", JSON.stringify(data.result));
                             setItem("token", data.token);
-                            context.updateState();
+                            context();
                         }else{
                             loginDone(dispatch, "Incorrect Email or Password");
                         }

@@ -1,4 +1,4 @@
-export const primary = "#7620E5";
+export const primary = "#4640FF";
 // export const secondary = "#FEAA21";
 export const splash_bg = "#0F0524";
 export const gold = "#FFD700";

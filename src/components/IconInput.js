@@ -9,7 +9,6 @@ import {
 // import {Ionicons as Icon} from '@expo/vector-icons';
 // import {Ionicons as Icon }from "react-native-vector-icons/Ionicons"
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
-
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { black, darkGray, lightGray } from '../assets/colors/index';
 // import { regular } from '../../assets/fonts';

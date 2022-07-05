@@ -1,7 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 import { getItem } from "../persist-storage";
 
-export const BASE_URL = "";
+export const BASE_URL = "http://localhost:8000";
 
 export const getToken = async () => {
     const token = await getItem("token");
@@ -15,11 +15,11 @@ export const getUser = async () => {
 
 export const fetchAPI = async (method, api, data, headers=null, params=null) => {
 
-    const url = `${BASE_URL}/public/api/${api}`;
+    const url = `${BASE_URL}/${api}`;
     const config = {
         method, // *GET, POST, PUT, DELETE, etc.
         headers: {
-            //'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
             // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: data // body data type must match "Content-Type" header

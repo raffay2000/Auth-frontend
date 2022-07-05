@@ -6,7 +6,7 @@ import {
     REGISTER_DONE,
     PUT_USER_DATA,
     PUT_USER_TOKEN,
-} from '../Constants';
+} from '../constant';
 
 const initialState = {
    loading:false,
